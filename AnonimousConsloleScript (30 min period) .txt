@@ -1,0 +1,3 @@
+SchedulerFlightDeleter sfd = new SchedulerFlightDeleter();
+String jobID00 = system.schedule('For deleting old flight', Constants.EVERY_HOUR_FROM_00MIN, sfd);
+String jobID30 = system.schedule('For deleting old flight more often', Constants.EVERY_HOUR_FROM_30MIN, sfd);
